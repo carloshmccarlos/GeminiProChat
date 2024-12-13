@@ -1,26 +1,41 @@
 .message pre {
-  background-color: #64748b10;
-  font-size: 0.8rem;
-  padding: 0.4rem 1rem;
+  background-color: #f0f4f8; /* Light grey background for code blocks */
+  font-size: 0.9rem;  /* Slightly larger font */
+  padding: 0.8rem 1.2rem; /* Increased padding */
+  border-radius: 6px; /* Rounded corners */
+  overflow-x: auto; /* Horizontal scroll if code overflows */
+  border: 1px solid #e0e6ed; /* Subtle border */
 }
 
 .message .hljs {
   background-color: transparent;
+  padding: 0;
 }
 
 .message table {
-  font-size: 0.8em;
+  font-size: 0.9em; /* slightly larger font size */
+  width: 100%; /* Ensure table expands to container */
+  border-collapse: collapse; /* Ensures borders collapse */
+  margin-top: 1rem; /* Add some spacing above the table */
+  margin-bottom: 1rem; /* Add some spacing below the table */
 }
 
 .message table thead tr {
-  background-color: #64748b40;
+  background-color: #e0e6ed; /* Light gray header background */
   text-align: left;
+  border-bottom: 1px solid #cbd5e1; /* Subtle border for separation */
 }
 
 .message table th, .message table td {
-  padding: 0.6rem 1rem;
+  padding: 0.8rem 1.2rem;  /* Increased padding for more space */
+  border-bottom: 1px solid #f0f4f8; /* Subtle bottom borders for rows */
 }
 
 .message table tbody tr:last-of-type {
-  border-bottom: 2px solid #64748b40;
+  border-bottom: 2px solid #cbd5e1;  /* A more visible line at the end of the table */
+}
+
+/* Optional: Add hover effects for table rows */
+.message table tbody tr:hover {
+  background-color: #f8fafc; /* Light gray on hover */
 }
